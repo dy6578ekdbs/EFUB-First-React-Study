@@ -1,0 +1,10 @@
+통합 터미널에 (macBook-air) : npm create-react-app 파일이름
+=>react-app설치됨
+
+경로 변경하는 법
+$ cd my-app
+
+애플리케이션 실행 (my-app들어와서 실행해야 함)
+npm start
+
+리액트 페이지 나오면 끝!

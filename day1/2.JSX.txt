@@ -1,0 +1,29 @@
+<JSX>
+자바스크립트와 XML / HTML을 합한 것. js문법의 확장버전
+const element = <h1>hello, world!</h1>
+
+<JSX의 역할> react element를 쉽게 만들기 위해 사용하는 리액트 문법
+XML,HTML을 js로 변환하는 역할을 하는 것임.
+내부적으로는 React.createElement가 이 역할을 함. 우린 JSX를 사용하여 
+이 문법을 쓴것처럼 element를 생성할 수 있다.(JSX가 필수는 아니라는 뜻)
+
+예시 
+JSX사용함 : <div>Hello, {name} </div>
+JSX사용안함 : React.createElement('div',null,`Hello,${name}`);
+
+createElement의 파라미터로는 무엇이 들어갈까?
+React.createElement(
+    type,
+    [props],
+    [...children]
+)
+
+<JSX의 장점>
+1. 코드의 간결함
+2. 가독성 향상 , 버그 발견도 쉬움
+3. injection attacks 방어
+
+<JSX 사용법>
+<html>사이에 js를 사용하고 싶으면 {}안에다 적으면됨.
+{자바스크립트 코드}
+
