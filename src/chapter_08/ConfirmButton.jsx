@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ConfirmButton = () => {
+function ConfirmButton() {
   const [isConfirmed, setIsConfirmed] = useState(false);
   const handleConfirm = () => {
     setIsConfirmed((prevIsConfirmed) => !prevIsConfirmed);
@@ -10,6 +10,6 @@ const ConfirmButton = () => {
       {isConfirmed ? "확인됨" : "확인하기"}
     </button>
   );
-};
+}
 
 export default ConfirmButton;
