@@ -3,13 +3,15 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-
 import Accommodate from "./chapter_07/Accommodate";
-
+import ConfirmButton from "./chapter_08/confrimButton";
+import LandingPage from "./chapter_09/LandingPage";
+import AttendanceBook from "./chapter_10/AttendanceBook";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Accommodate />
+    <LandingPage />
+    <AttendanceBook />
   </React.StrictMode>
 );
 
