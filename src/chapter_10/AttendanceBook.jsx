@@ -1,17 +1,17 @@
 import React from "react";
 
 const students = [
-  { name: "Inje" },
-  { name: "Steve" },
-  { name: "Bill" },
-  { name: "Jeff" },
+  { id: 1, name: "Inje" },
+  { id: 2, name: "Steve" },
+  { id: 3, name: "Bill" },
+  { id: 4, name: "Jeff" },
 ];
 
 const AttendanceBook = () => {
   return (
     <ul>
       {students.map((student) => {
-        return <li>{student.name}</li>;
+        return <li key={`student-id-${student.id}`}>{student.name}</li>;
       })}
     </ul>
   );
