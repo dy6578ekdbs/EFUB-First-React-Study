@@ -11,11 +11,12 @@ import Reservation from "./chapter_11/reservation";
 import SignUp from "./chapter_11/signUp";
 import Calculator from "./chapter_12/Calculator";
 import ProfileCard from "./chapter_13/ProfileCard";
+import DarkofLight from "./chapter_14/darkorLight";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <ProfileCard />
+    <DarkofLight />
   </React.StrictMode>
 );
 
