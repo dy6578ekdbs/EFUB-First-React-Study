@@ -3,20 +3,11 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Accommodate from "./chapter_07/Accommodate";
-import ConfirmButton from "./chapter_08/confrimButton";
-import LandingPage from "./chapter_09/LandingPage";
-import AttendanceBook from "./chapter_10/AttendanceBook";
-import Reservation from "./chapter_11/reservation";
-import SignUp from "./chapter_11/signUp";
-import Calculator from "./chapter_12/Calculator";
-import ProfileCard from "./chapter_13/ProfileCard";
-import DarkofLight from "./chapter_14/darkorLight";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <DarkofLight />
+    <App />
   </React.StrictMode>
 );
 
