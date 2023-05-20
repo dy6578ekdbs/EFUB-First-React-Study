@@ -46,12 +46,12 @@ const ContentText = styled.p`
   해당 행에서 자동으로 줄바꿈이 일어납니다. */
 `;
 
-const commentLabel = styled.p`
+const CommentLabel = styled.p`
   font-size: 16px;
   font-weight: 500;
 `;
 
-const PostWritePage = (props) => {
+const PostViewPage = (props) => {
   const navigate = useNavigate();
   const { postId } = useParams();
 
@@ -75,14 +75,14 @@ const PostWritePage = (props) => {
           <ContentText>{post.content}</ContentText>
         </PostContainer>
 
-        <commentLabel>댓글</commentLabel>
+        <CommentLabel>댓글</CommentLabel>
         <CommentList comments={post.comments} />
 
         <TextInput
           height={20}
           value={comment}
           onChange={(event) => {
-            setTitle(event.target.value);
+            setComment(event.target.value);
           }}
         />
         <Button
@@ -96,4 +96,4 @@ const PostWritePage = (props) => {
   );
 };
 
-export default PostWritePage;
+export default PostViewPage;

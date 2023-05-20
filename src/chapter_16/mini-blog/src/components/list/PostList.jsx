@@ -20,6 +20,7 @@ const Wrapper = styled.div`
 
 const PostList = (props) => {
   const { posts, onClickItem } = props;
+
   return (
     <Wrapper>
       {posts.map((post, index) => {
@@ -27,7 +28,7 @@ const PostList = (props) => {
           <PostListItem
             key={post.id}
             post={post}
-            onclick={() => {
+            onClick={() => {
               onClickItem(post);
             }}
           />
