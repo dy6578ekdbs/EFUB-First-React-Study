@@ -29,7 +29,7 @@ const CommentListItem = (props) => {
   const { comment } = props;
   return (
     <Wrapper>
-      <ContentText>{comment.title}</ContentText>
+      <ContentText>{comment.content}</ContentText>
     </Wrapper>
   );
 };
